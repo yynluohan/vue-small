@@ -2,7 +2,7 @@
 
 > 学习使用 vue + vux 做一个静态商城
 
-## Build Setup
+<!-- ## Build Setup
 
 ``` bash
 # install dependencies
@@ -16,10 +16,10 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-```
+``` -->
 
 ## 效果截图
-![Alt text](/shotcut/1.png)
+<!-- ![Alt text](/shotcut/1.png)
 ![Alt text](/shotcut/2.png)
 ![Alt text](/shotcut/3.png)
 ![Alt text](/shotcut/4.png)
@@ -33,7 +33,7 @@ npm run build --report
 ![Alt text](/shotcut/12.png)
 ![Alt text](/shotcut/13.png)
 ![Alt text](/shotcut/14.png)
-![Alt text](/shotcut/15.png)
+![Alt text](/shotcut/15.png) -->
 
 ## 进度
 当前还在学习编写中...
