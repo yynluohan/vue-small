@@ -1,5 +1,5 @@
 <template>
-	<tabbar >
+ <tabbar>
 		<tabbar-item
 			v-for="item in bottomBar"
 			:link="item.link">
@@ -16,6 +16,7 @@
 	</tabbar>
 </template>
 <script>
+
 import { Tabbar, TabbarItem } from 'vux'
 
 export default {
