@@ -1,8 +1,8 @@
 <template>
   <div class='container' :style="styleStyle">
     <img :src="url" alt="" class="image" :style="urlStyle"/>
-    <div :style="titleStyle">{{title}}</div>
-    <div :style="subtitleStyle">{{subtitle}}</div>
+    <div :style="titleStyle" class="title">{{title}}</div>
+    <div :style="subtitleStyle" class="subtitle">{{subtitle}}</div>
   </div>
 </template>
 
@@ -55,14 +55,36 @@
   }
 </script>
 
-<style>
+<style scoped>
   .container {
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.5em;
+    width:96%;
+    margin:2%;
+    background-color: #fff;
   }
 
-  .container .image {
-    width:45%;
+  .image {
+    width:90%;
   }
+
+  .title {
+    margin: 0.3em 0;
+    height:20px;
+    /* word-break: break-all; */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    webkit-line-clamp: 1;
+    /*autoprefixer: off*/
+    webkit-box-orient: vertical;
+    /*autoprefixer: on*/
+    overflow: hidden;
+  }
+
+  .subtitle {
+    color: #bc8c45;
+  }
+
 </style>

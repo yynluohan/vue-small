@@ -1,32 +1,33 @@
 <template>
-	<div style="height: 100%;">
-		<loading 
-			v-model="loading" 
+	<div>
+		<loading
+			v-model="loading"
 			:text="'加载中...'">
 		</loading>
 		<!-- index article cart mine -->
 		<div
 			class="z-app"
-			:class="{'hideLeft':$route.path.split('/').length>2}">
-			
-			    <keep-alive>
-			        <router-view 
-			        	name="default">
-			        </router-view>
-			    </keep-alive>
-			
+			:class="{'hideLeft':$route.path.split('/').length>2}"
+			>
+	    <div style="margin-bottom:65px">
+				<keep-alive>
+	        <router-view
+	        	name="default">
+	        </router-view>
+		    </keep-alive>
+			</div>
 			<div class="z-foot">
 				<buttom-nav></buttom-nav>
 			</div>
 		</div>
 
 		<transition
-			name="custom-classes-transition" 
-			:enter-active-class="enterAnimate" 
+			name="custom-classes-transition"
+			:enter-active-class="enterAnimate"
 			:leave-active-class="leaveAnimate">
-			<keep-alive>
-				<router-view 
-					name="subPage" 
+			<keep-alive style="margin-bottom:65px">
+				<router-view
+					name="subPage"
 					class="router-view">
 				</router-view>
 			</keep-alive>
@@ -60,7 +61,7 @@ export default {
 				// this.$store.commit('setPageName', to.name)
 			}
 			if(toDepth === fromDepth) {
-				return 
+				return
 			}
 			this.enterAnimate = toDepth > fromDepth
 				? 'animated fadeInRight'
@@ -73,7 +74,7 @@ export default {
 			// if(toDepth === 3) {
 			// 	this.leaveAnimate = 'animated fadeOutRight'
 			// }
-			
+
 		}
 	},
 	computed: {
@@ -84,6 +85,12 @@ export default {
 	methods: {
 
 	},
-	
+
 }
 </script>
+
+<style>
+	.z-foot {
+		margin-top: 60px;
+	}
+</style>

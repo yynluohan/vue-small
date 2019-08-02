@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class='content'>
-			<view-box>
+			<view-box style="height:200px;margin-bottom:5px">
 				<swiper
 				  :list="shopBanner"
 					:loop="true"
@@ -25,26 +25,20 @@
 				</swiper>
 			</view-box>
 		</div>
-		<!-- <scalable-list
+		<scalable-list
 			:list="scalableList"
-			:style="styleStyle"
 		>
-		</scalable-list> -->
+		</scalable-list>
 	</div>
 </template>
 
 <script>
-	require('./index.less')
+	// require('./index.less')
 
 	import { shop,shopBanner,scalableList } from '../../data/data.js';
 	import { Swiper,ViewBox } from 'vux';
 	import LineItem from '../../components/listItems/LineItem';
 	import ScalableList from '../../components/ScalableList';
-
-	// const styleStyle = {
-	// 	width:'50%',
-	// 	border: '1px solid red'
-	// }
 
 	export default {
 		components: {
@@ -74,3 +68,35 @@
 		}
 	}
 </script>
+
+<style scoped>
+	.header {
+	width:100%;
+	position: fixed;
+	z-index: 999;
+	background-color: #fff;
+	display: flex;
+	justify-content:space-between;
+	padding: 0.5em;
+	}
+
+	.header .left,.header .right {
+	display: flex;
+	align-items: center;
+	}
+
+	.header .left span {
+	margin-left: 0.5em;
+	}
+
+	.header img {
+	width: 40px;
+	border-radius: 50%;
+	}
+
+	.content {
+		padding-top: 54px;
+		/* padding-bottom: 50px; */
+	}
+
+</style>

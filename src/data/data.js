@@ -13,17 +13,47 @@ export const scalableList = [
 	{
 		title: 'i-Softto乙基VC 30ml 精华液B02',
 		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
-		subtitle: '399元'
+		subtitle: '￥399元'
 	},
 	{
 		title: 'i-Softto烟酰胺 30ml 精华液B04',
 		url: 'https://www.muaskin.com/images/p/795d14443cfaabbbd40af6f7b4888f19.png',
-		subtitle: '399元'
+		subtitle: '￥399元'
 	},
 	{
 		title: 'i-Softto视黄醇30ml精华乳J03',
 		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
-		subtitle: '399元'
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto乙基VC 30ml 精华液B02',
+		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto烟酰胺 30ml 精华液B04',
+		url: 'https://www.muaskin.com/images/p/795d14443cfaabbbd40af6f7b4888f19.png',
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto视黄醇30ml精华乳J03',
+		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto乙基VC 30ml 精华液B02',
+		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto烟酰胺 30ml 精华液B04',
+		url: 'https://www.muaskin.com/images/p/795d14443cfaabbbd40af6f7b4888f19.png',
+		subtitle: '￥399元'
+	},
+	{
+		title: 'i-Softto视黄醇30ml精华乳J03',
+		url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
+		subtitle: '￥399元'
 	}
 ]
 
