@@ -36,7 +36,7 @@ export default {
 				{
 					name: '资讯',
 					iconCls: 'zui-icon-TEA',
-					link: 'articles'
+					link: 'article'
 				},
 				{
 					name: '购物车',
@@ -46,7 +46,7 @@ export default {
 				{
 					name: '我的',
 					iconCls: 'zui-icon-MINE_1',
-					link: 'mine'
+					link: 'person'
 				}
 			]
 		}

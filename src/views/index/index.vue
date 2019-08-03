@@ -2,7 +2,7 @@
 	<div>
 		<div class='header'>
 			<div class='left'>
-				<img :src="shop.logo" alt='logo'/>
+				<img class='logo' :src="shop.logo" alt='logo'/>
 				<span>{{shop.title}}</span>
 			</div>
 			<div class='right'>
@@ -71,27 +71,28 @@
 
 <style scoped>
 	.header {
-	width:100%;
-	position: fixed;
-	z-index: 999;
-	background-color: #fff;
-	display: flex;
-	justify-content:space-between;
-	padding: 0.5em;
+		width:100%;
+		position: fixed;
+		z-index: 999;
+		background-color: #fff;
+		display: flex;
+		justify-content:space-between;
+		padding: 0.5em;
 	}
 
-	.header .left,.header .right {
-	display: flex;
-	align-items: center;
+	.left,.right {
+		display: flex;
+		align-items: center;
 	}
 
-	.header .left span {
-	margin-left: 0.5em;
+ .left span {
+		margin-left: 0.5em;
 	}
 
-	.header img {
-	width: 40px;
-	border-radius: 50%;
+	.left img {
+		width: 40px;
+		height:40px;
+		border-radius: 50%;
 	}
 
 	.content {

@@ -57,6 +57,14 @@ export const scalableList = [
 	}
 ]
 
+export const productInfoData = {
+	des:'<p><img src="https://www.muaskin.com/images/upload/image/20190422/1555905208954047567.jpg" title="1555905208954047567.jpg" alt="玻尿酸（原稿新修改）.jpg"></p>',
+	name: "i-Softto玻尿酸 30ml 精华液B03",
+	id: 29,
+	cover: "https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png",
+	price: 320,
+}
+
 // shop banner
 export const shopBanner = [
 	{

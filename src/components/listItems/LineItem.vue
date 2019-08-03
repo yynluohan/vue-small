@@ -64,6 +64,7 @@
     width:96%;
     margin:2%;
     background-color: #fff;
+    color:#000;
   }
 
   .image {
@@ -72,19 +73,18 @@
 
   .title {
     margin: 0.3em 0;
-    height:20px;
-    /* word-break: break-all; */
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    webkit-line-clamp: 1;
-    /*autoprefixer: off*/
-    webkit-box-orient: vertical;
-    /*autoprefixer: on*/
+    white-space: nowrap;
+    width:100%;
+    text-overflow:ellipsis;
     overflow: hidden;
   }
 
   .subtitle {
     color: #bc8c45;
+  }
+
+  .container:active {
+    background-color: #ededed;
   }
 
 </style>

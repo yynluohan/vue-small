@@ -2,12 +2,19 @@
   <div>
     <ul class='list-continer'>
       <li v-for="item in list">
-        <line-item
-          :url="item.url"
-          :title="item.title"
-          :subtitle="item.subtitle"
+        <router-link
+          :to="{
+            name: 'productDetail',
+            params:{id:item.id || ''}
+          }"
         >
-        </line-item>
+          <line-item
+            :url="item.url"
+            :title="item.title"
+            :subtitle="item.subtitle"
+          >
+          </line-item>
+        </router-link>
       </li>
     </ul>
   </div>
