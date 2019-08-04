@@ -1,5 +1,9 @@
 <template>
   <div>
+    <TopBar
+      :type="'PopupHeader'"
+      :title="'产品详情'"
+    ></TopBar>
     <view-box>
       <swiper
         :list="[{
@@ -18,15 +22,11 @@
 <script>
   import { productInfoData } from '../../data/data';
   import { Swiper,ViewBox } from 'vux';
-
-  const createHtml = (text) => {
-    return {
-      __html: text
-    }
-  }
+  import TopBar from '../../components/TopBar';
 
   export default {
     components : {
+      TopBar:TopBar,
       Swiper,
       ViewBox
     },

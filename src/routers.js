@@ -4,6 +4,7 @@ const Article = () => import('./views/article/Article.vue');
 const Cart = () => import('./views/cart/Cart.vue');
 const Person = () => import('./views/person/Person.vue');
 const ProductDetail = () => import('./views/product/ProductDetail.vue');
+const Search = () => import('./views/search/Search.vue');
 
 export default [
 	{
@@ -30,6 +31,11 @@ export default [
 		path: '/productDetail',
 		name: 'productDetail',
 		component: ProductDetail
+	},
+	{
+		path: '/search',
+		name: 'search',
+		component: Search
 	},
 	{
 		path: '*',

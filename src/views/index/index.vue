@@ -9,21 +9,19 @@
 				<router-link
 					class="zui-icon zui-icon-SEARCH_1"
 					:to="{
-						name: 'searchResult'
+						name: 'search'
 					}">
 				</router-link>
 			</div>
 		</div>
 		<div class='content'>
-			<view-box style="height:200px;margin-bottom:5px">
-				<swiper
-				  :list="shopBanner"
-					:loop="true"
-					:auto="true"
-					:height="'200px'"
-				>
-				</swiper>
-			</view-box>
+			<swiper
+			  :list="shopBanner"
+				:loop="true"
+				:auto="true"
+				:height="'200px'"
+			>
+			</swiper>
 		</div>
 		<scalable-list
 			:list="scalableList"

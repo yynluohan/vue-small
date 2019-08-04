@@ -1,10 +1,9 @@
 <template>
   <div>
-    <!-- <TopBar :title="'购物车'"></TopBar> -->
-    cart.page
+    <TopBar :title="'搜索'"></TopBar>
+    <div>search.page</div>
   </div>
 </template>
-
 <script>
   import TopBar from '../../components/TopBar';
 

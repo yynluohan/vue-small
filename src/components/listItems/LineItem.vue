@@ -68,7 +68,7 @@
   }
 
   .image {
-    width:90%;
+    width:90%;height: auto;
   }
 
   .title {
