@@ -1,7 +1,7 @@
 /*********** index  **********/
 // shop
 export const shop = {
-	logo: '/static/img/life-index-logo.png',
+	avatar: '/static/img/avatar.png',
 	title: '零零商城',
 	// shareInfo: {
 	// 	title: '长按二维码分享',

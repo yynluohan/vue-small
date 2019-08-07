@@ -2,7 +2,7 @@
 	<div>
 		<div class='header'>
 			<div class='left'>
-				<img class='logo' :src="shop.logo" alt='logo'/>
+				<img class='logo' :src="shop.avatar" alt='logo'/>
 				<span>{{shop.title}}</span>
 			</div>
 			<div class='right'>
