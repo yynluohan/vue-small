@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="header-content">
-      <div class="icon" @click="onClick()">
+      <div class="header-icon" @click="onClick()">
         <x-icon type="ios-arrow-left"></x-icon>
         <span>返回</span>
       </div>
-      <div>{{title}}</div>
-      <div></div>
+      <div class="header-title">{{title}}</div>
+      <div class="header-right"></div>
     </div>
     <div class="header-footer"></div>
   </div>
@@ -43,11 +43,22 @@
   }
 
   .header-footer {
-    height: 50px;
+    height: 52px;
   }
 
-  .icon {
+  .header-icon {
     display: flex;
     align-items: center;
+    width:15%;
   }
+
+  .header-title {
+    width:70%;
+    text-align: center;
+  }
+
+  .header-right {
+    width:15%;
+  }
+
 </style>

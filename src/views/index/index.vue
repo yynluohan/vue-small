@@ -22,16 +22,17 @@
 				:height="'200px'"
 			>
 			</swiper>
+			<div class="text">全部产品</div>
+			<ScalableList
+				:list="scalableList"
+			>
+			</ScalableList>
 		</div>
-		<scalable-list
-			:list="scalableList"
-		>
-		</scalable-list>
+
 	</div>
 </template>
 
 <script>
-	// require('./index.less')
 
 	import { shop,shopBanner,scalableList } from '../../data/data.js';
 	import { Swiper,ViewBox } from 'vux';
@@ -43,25 +44,13 @@
 			Swiper,
 			ViewBox,
 			LineItem,
-			ScalableList
+			ScalableList:ScalableList,
 		},
 		data() {
 			return {
 				shop:shop,
 				shopBanner: shopBanner,
 				scalableList: scalableList,
-				itemData: {
-					title:'aaaa',
-					subtitle:'22222',
-					url: 'https://www.muaskin.com/images/p/80215db34eae42725af9b210aaf36bb4.png',
-					styleStyle:{
-						width:"120px",
-					},
-					titleStyle:{
-						color: 'red',
-						fontSize:'18px'
-					}
-				}
 			}
 		}
 	}
@@ -95,7 +84,17 @@
 
 	.content {
 		padding-top: 54px;
-		/* padding-bottom: 50px; */
+	}
+
+	.text {
+		background-color: #fff;
+    margin-top: 0.5em;
+    margin: 0.3em 1% 0.2em 1%;
+    padding: 0.5em;
+    position: relative;
+    top: 6px;
+    border-bottom: 1px solid #f2f2f2;
+		color: #818181;
 	}
 
 </style>

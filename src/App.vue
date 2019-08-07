@@ -4,7 +4,6 @@
 			v-model="loading"
 			:text="'加载中...'">
 		</loading>
-		<!-- index article cart mine -->
 		<div
 			class="z-app"
 			:class="{'hideLeft':$route.path.split('/').length>2}"
@@ -16,7 +15,7 @@
 	        </router-view>
 		    </keep-alive>
 			</div>
-			<div class="z-foot">
+			<div class="z-foot" id="z-foot">
 				<buttom-nav></buttom-nav>
 			</div>
 		</div>
@@ -77,6 +76,10 @@ export default {
 
 		}
 	},
+
+
+
+
 	computed: {
 		loading(){
 			return this.$store.getters.loading
@@ -87,6 +90,7 @@ export default {
 	},
 
 }
+
 </script>
 
 <style>

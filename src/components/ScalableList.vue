@@ -30,10 +30,8 @@
     },
 
     beforeMounted() {
-      console.log('111====',this)
     },
     mounted() {
-      console.log('3333====',this)
     }
   }
 </script>
